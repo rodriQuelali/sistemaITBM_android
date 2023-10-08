@@ -1,4 +1,4 @@
-package com.example.sistemaitbm_reg.persona;
+package com.example.sistemaitbm_reg.Models;
 
 public abstract class Persona {
 
@@ -17,7 +17,7 @@ public abstract class Persona {
         this.age = age;
     }
     //metodos
-    public abstract void getNote();
+    public abstract void login();
 
     //get and set
 

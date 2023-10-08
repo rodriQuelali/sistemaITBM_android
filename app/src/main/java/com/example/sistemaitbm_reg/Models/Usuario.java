@@ -1,6 +1,6 @@
-package com.example.sistemaitbm_reg.persona;
+package com.example.sistemaitbm_reg.Models;
 
-public class Usuario {
+public class Usuario extends Persona{
     private String password;
     private int privilegio;
     private int intentos;
@@ -8,7 +8,8 @@ public class Usuario {
     private String fecha_registro;
     private String ruta;
 
-    public Usuario(String password, int privilegio, int intentos, String estado, String fecha_registro, String ruta) {
+    public Usuario(String name, String lastNameMother, String lasNamefather, int ci, int age, String password, int privilegio, int intentos, String estado, String fecha_registro, String ruta) {
+        super(name, lastNameMother, lasNamefather, ci, age);
         this.password = password;
         this.privilegio = privilegio;
         this.intentos = intentos;
@@ -17,8 +18,6 @@ public class Usuario {
         this.ruta = ruta;
     }
 
-
-    
     //set and get
 
     public String getPassword() {
@@ -67,5 +66,10 @@ public class Usuario {
 
     public void setRuta(String ruta) {
         this.ruta = ruta;
+    }
+
+    @Override
+    public void login() {
+
     }
 }

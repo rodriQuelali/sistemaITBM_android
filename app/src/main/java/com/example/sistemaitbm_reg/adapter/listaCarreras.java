@@ -9,13 +9,14 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.sistemaitbm_reg.R;
-import com.example.sistemaitbm_reg.persona.Carrera;
+import com.example.sistemaitbm_reg.Models.Carrera;
 
 import java.util.ArrayList;
 
 public class listaCarreras extends RecyclerView.Adapter<listaCarreras.CarreraViewsHolder> {
 
     ArrayList<Carrera> carrera;
+    private OnItemClickListener onClickCarrera;
 
     public listaCarreras(ArrayList<Carrera> carrera){
         this.carrera = carrera;
@@ -25,7 +26,9 @@ public class listaCarreras extends RecyclerView.Adapter<listaCarreras.CarreraVie
     @Override
     public CarreraViewsHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.carreras,null,false);
+
         return new CarreraViewsHolder(view);
+
     }
 
     @Override
@@ -39,8 +42,16 @@ public class listaCarreras extends RecyclerView.Adapter<listaCarreras.CarreraVie
     @Override
     public int getItemCount() {
         return carrera.size();
-
     }
+
+    public void setOnClickListener(OnItemClickListener onClickCarrera){
+        this.onClickCarrera = onClickCarrera;
+    }
+
+    public interface OnItemClickListener {
+        void onItemClick(int position, Carrera carrera);
+    }
+
 
     public class CarreraViewsHolder extends RecyclerView.ViewHolder {
         TextView Ncarrera, estTv, tipoTv, rangoTv;
@@ -50,6 +61,21 @@ public class listaCarreras extends RecyclerView.Adapter<listaCarreras.CarreraVie
             estTv = itemView.findViewById(R.id.tvestado);
             tipoTv = itemView.findViewById(R.id.tvtTipo);
             rangoTv = itemView.findViewById(R.id.tvRango);
+
+            //devolvemos la posiscion
+            itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    if(onClickCarrera != null){
+                        int position = getAdapterPosition();
+                        if(position != RecyclerView.NO_POSITION){
+                            //para la posicion
+                            Carrera carrSelec = carrera.get(position);
+                            onClickCarrera.onItemClick(position, carrSelec);
+                        }
+                    }
+                }
+            });
 
         }
     }

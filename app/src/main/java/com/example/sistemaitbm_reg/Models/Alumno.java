@@ -1,4 +1,4 @@
-package com.example.sistemaitbm_reg.persona;
+package com.example.sistemaitbm_reg.Models;
 
 public class Alumno extends Persona{
     private String address;
@@ -13,7 +13,7 @@ public class Alumno extends Persona{
     }
 
     @Override
-    public void getNote() {
+    public void login() {
 
     }
 }

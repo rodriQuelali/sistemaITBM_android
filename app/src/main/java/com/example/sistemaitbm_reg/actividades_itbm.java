@@ -1,18 +1,16 @@
 package com.example.sistemaitbm_reg;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
 
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Toast;
 
-import com.example.sistemaitbm_reg.adapter.listaCarreras;
-import com.example.sistemaitbm_reg.persona.Carrera;
+import com.example.sistemaitbm_reg.iu_carrera.ListaCarreraFragment;
+import com.example.sistemaitbm_reg.Models.Carrera;
 
 import java.util.ArrayList;
-import java.util.List;
 
 public class actividades_itbm extends AppCompatActivity {
 
@@ -20,31 +18,29 @@ public class actividades_itbm extends AppCompatActivity {
 
     ArrayList<Carrera> listaCarrera;
 
-    RecyclerView lisN;
+    //fragments
+    FragmentTransaction transCarrera;
+    Fragment registroCarr, listaCarreraFragments;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_actividades_itbm);
 
-        lisN = (RecyclerView) findViewById(R.id.listaN);
-        lisN.setLayoutManager(new LinearLayoutManager(this));
+        //intanaciamos fragments
+        registroCarr = new registro_carrera();
+        getSupportFragmentManager().beginTransaction().add(R.id.frameLayout, registroCarr).commit();
 
+    }
+    
+    public void cListaCarrrea(View v){
+        listaCarreraFragments = new ListaCarreraFragment();
+        //getSupportFragmentManager().beginTransaction().add(R.id.frameLayout, listaCarreraFragments).commit();
+        getSupportFragmentManager().beginTransaction().replace(R.id.frameLayout, listaCarreraFragments).commit();
+    }
 
-
-        listaCarrera = new ArrayList<>();
-        listaCarrera.add(new Carrera("Sistemas Informaticos","s","ANUAL", 0));
-        listaCarrera.add(new Carrera("Sistemas Informaticos","s","ANUAL", 0));
-        listaCarrera.add(new Carrera("Sistemas Informaticos","s","ANUAL", 0));
-        listaCarrera.add(new Carrera("Sistemas Informaticos","s","ANUAL", 0));
-        listaCarrera.add(new Carrera("Sistemas Informaticos","s","ANUAL", 0));
-        listaCarrera.add(new Carrera("Sistemas Informaticos","s","ANUAL", 0));
-        listaCarrera.add(new Carrera("Sistemas Informaticos","s","ANUAL", 0));
-
-        listaCarreras adapter = new listaCarreras(listaCarrera);
-        lisN.setAdapter(adapter);
-
-
-
-
+    public void carreraRegistro(View v){
+        registroCarr = new registro_carrera();
+        getSupportFragmentManager().beginTransaction().replace(R.id.frameLayout, registroCarr).commit();
     }
 }

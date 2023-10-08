@@ -8,7 +8,7 @@ import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.ListView;
 
-import com.example.sistemaitbm_reg.persona.Persona;
+import com.example.sistemaitbm_reg.Models.Persona;
 
 import java.util.ArrayList;
 
