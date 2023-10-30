@@ -1,4 +1,4 @@
-package com.example.sistemaitbm_reg;
+package com.example.sistemaitbm_reg.activitys;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
@@ -8,9 +8,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
-import android.widget.ListView;
 
-import com.example.sistemaitbm_reg.Models.Persona;
+import com.example.sistemaitbm_reg.R;
 
 import java.util.ArrayList;
 

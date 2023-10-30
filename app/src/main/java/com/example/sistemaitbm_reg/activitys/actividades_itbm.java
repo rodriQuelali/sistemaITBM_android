@@ -1,4 +1,4 @@
-package com.example.sistemaitbm_reg;
+package com.example.sistemaitbm_reg.activitys;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -9,15 +9,13 @@ import androidx.fragment.app.FragmentTransaction;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Toast;
 
+import com.example.sistemaitbm_reg.R;
 import com.example.sistemaitbm_reg.buttonNavigation.BottomNavigationListener;
 import com.example.sistemaitbm_reg.iu_carrera.ListaCarreraFragment;
-import com.example.sistemaitbm_reg.Models.Carrera;
+import com.example.sistemaitbm_reg.iu_carrera.registro_carrera;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationBarView;
-
-import java.util.ArrayList;
 
 public class actividades_itbm extends AppCompatActivity {
 
