@@ -87,8 +87,6 @@ public class ListaCarreraFragment extends Fragment {
 
         showCarreras();
 
-
-
         return view;
     }
 

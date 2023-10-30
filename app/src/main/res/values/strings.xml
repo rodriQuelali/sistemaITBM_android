@@ -1,5 +1,8 @@
 <resources>
     <string name="app_name">Sistema ITBM</string>
+    <string name="title_home">Inicio</string>
+    <string name="title_lista">Lista</string>
+    <string name="title_registro">Registro</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
