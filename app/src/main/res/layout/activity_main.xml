@@ -90,7 +90,7 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
-        android:id="@+id/btnI"
+        android:id="@+id/btnRegistroCarrera"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:layout_alignParentEnd="true"
@@ -114,7 +114,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnI"
+        app:layout_constraintTop_toBottomOf="@+id/btnRegistroCarrera"
         tools:ignore="MissingConstraints" />
 
     <TextView
