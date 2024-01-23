@@ -19,7 +19,7 @@ public class inicio extends AppCompatActivity {
     EditText txt;
     private ArrayList<String> carreras = new ArrayList<>();
     private ArrayAdapter<String> listaCar;
-    CardView cardCarrera;
+    CardView cardCarrera, cardNotificaction;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,6 +30,7 @@ public class inicio extends AppCompatActivity {
     }
     private void cargarClassR(){
         cardCarrera = (CardView) findViewById(R.id.cardCarrera);
+        cardNotificaction = (CardView) findViewById(R.id.cardNotificaiones);
     }
 
     private void eventoInicio(){
@@ -37,6 +38,14 @@ public class inicio extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(inicio.this, actividades_itbm.class);
+                startActivity(i);
+            }
+        });
+
+        cardNotificaction.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(inicio.this, notificaciones.class);
                 startActivity(i);
             }
         });

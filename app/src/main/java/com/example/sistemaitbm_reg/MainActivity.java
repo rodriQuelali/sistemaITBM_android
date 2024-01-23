@@ -12,6 +12,8 @@ import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.Toast;
 
+
+
 import com.example.sistemaitbm_reg.activitys.inicio;
 
 public class MainActivity extends AppCompatActivity {
@@ -31,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void clasR (){
-        btnIni = (Button) findViewById(R.id.btnI);
+        btnIni = (Button) findViewById(R.id.btnRegistroCarrera);
         chechCont = (CheckBox) findViewById(R.id.checkBox);
         txtUser = (EditText) findViewById(R.id.txtUsuarioLogin);
         txtPass = (EditText) findViewById(R.id.txtContraLogin);
