@@ -17,9 +17,6 @@ import android.widget.Toast;
 import com.example.sistemaitbm_reg.activitys.inicio;
 
 public class MainActivity extends AppCompatActivity {
-
-
-
     private Button btnIni;
     private CheckBox chechCont;
     private EditText txtUser, txtPass;
