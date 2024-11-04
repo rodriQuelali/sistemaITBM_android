@@ -1,4 +1,4 @@
-package com.example.sistemaitbm_reg.iu_notificaciones;
+package com.example.sistemaitbm_reg.ui.iu_notificaciones;
 
 import android.os.Bundle;
 

@@ -6,7 +6,7 @@ import androidx.fragment.app.Fragment;
 import android.os.Bundle;
 
 import com.example.sistemaitbm_reg.R;
-import com.example.sistemaitbm_reg.iu_notificaciones.listNotifications;
+import com.example.sistemaitbm_reg.ui.iu_notificaciones.listNotifications;
 
 public class notificaciones extends AppCompatActivity {
 
