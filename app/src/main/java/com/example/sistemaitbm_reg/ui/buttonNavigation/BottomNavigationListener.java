@@ -1,4 +1,4 @@
-package com.example.sistemaitbm_reg.buttonNavigation;
+package com.example.sistemaitbm_reg.ui.buttonNavigation;
 
 import android.content.Context;
 
@@ -6,8 +6,8 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 
 import com.example.sistemaitbm_reg.R;
-import com.example.sistemaitbm_reg.iu_carrera.ListaCarreraFragment;
-import com.example.sistemaitbm_reg.iu_carrera.registro_carrera;
+import com.example.sistemaitbm_reg.ui.iu_carrera.ListaCarreraFragment;
+import com.example.sistemaitbm_reg.ui.iu_carrera.registro_carrera;
 
 public class BottomNavigationListener {
 

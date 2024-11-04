@@ -9,7 +9,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.sistemaitbm_reg.R;
-import com.example.sistemaitbm_reg.Models.Carrera;
+import com.example.sistemaitbm_reg.models.objetos.Carrera;
 
 import java.util.ArrayList;
 

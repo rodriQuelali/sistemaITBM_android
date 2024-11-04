@@ -1,4 +1,4 @@
-package com.example.sistemaitbm_reg.activitys;
+package com.example.sistemaitbm_reg.ui.activitys;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -11,9 +11,9 @@ import android.view.MenuItem;
 import android.view.View;
 
 import com.example.sistemaitbm_reg.R;
-import com.example.sistemaitbm_reg.buttonNavigation.BottomNavigationListener;
-import com.example.sistemaitbm_reg.iu_carrera.ListaCarreraFragment;
-import com.example.sistemaitbm_reg.iu_carrera.registro_carrera;
+import com.example.sistemaitbm_reg.ui.buttonNavigation.BottomNavigationListener;
+import com.example.sistemaitbm_reg.ui.iu_carrera.ListaCarreraFragment;
+import com.example.sistemaitbm_reg.ui.iu_carrera.registro_carrera;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationBarView;
 

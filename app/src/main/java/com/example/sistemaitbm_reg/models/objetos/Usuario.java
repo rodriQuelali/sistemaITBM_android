@@ -1,6 +1,6 @@
-package com.example.sistemaitbm_reg.Models;
+package com.example.sistemaitbm_reg.models.objetos;
 
-public class Usuario extends Persona{
+public class Usuario extends Persona {
     private String password;
     private int privilegio;
     private int intentos;

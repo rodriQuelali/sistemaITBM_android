@@ -1,6 +1,6 @@
-package com.example.sistemaitbm_reg.Models;
+package com.example.sistemaitbm_reg.models.objetos;
 
-public class Alumno extends Persona{
+public class Alumno extends Persona {
     private String address;
     private int bachelorCode;
     private String depositCode;

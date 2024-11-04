@@ -1,4 +1,4 @@
-package com.example.sistemaitbm_reg.iu_carrera;
+package com.example.sistemaitbm_reg.ui.iu_carrera;
 
 import android.os.Bundle;
 

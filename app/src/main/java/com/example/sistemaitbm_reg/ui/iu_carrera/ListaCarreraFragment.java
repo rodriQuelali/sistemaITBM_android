@@ -1,4 +1,4 @@
-package com.example.sistemaitbm_reg.iu_carrera;
+package com.example.sistemaitbm_reg.ui.iu_carrera;
 
 import android.os.Bundle;
 
@@ -14,9 +14,9 @@ import android.widget.Toast;
 
 import com.example.sistemaitbm_reg.R;
 import com.example.sistemaitbm_reg.adapter.listaCarreras;
-import com.example.sistemaitbm_reg.Models.Carrera;
-import com.example.sistemaitbm_reg.configHttp.ApiClient;
-import com.example.sistemaitbm_reg.configHttp.ApiService;
+import com.example.sistemaitbm_reg.models.objetos.Carrera;
+import com.example.sistemaitbm_reg.models.api.ApiClient;
+import com.example.sistemaitbm_reg.models.api.ApiService;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,4 +1,4 @@
-package com.example.sistemaitbm_reg.Models;
+package com.example.sistemaitbm_reg.models.objetos;
 
 public abstract class Persona {
 

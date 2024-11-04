@@ -1,4 +1,4 @@
-package com.example.sistemaitbm_reg.activitys;
+package com.example.sistemaitbm_reg.ui.activitys;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;

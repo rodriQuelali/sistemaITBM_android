@@ -1,4 +1,4 @@
-package com.example.sistemaitbm_reg.configHttp;
+package com.example.sistemaitbm_reg.models.api;
 
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
